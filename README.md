@@ -15,7 +15,9 @@ Check for issues:
 -----------------
 
 ``docker logs`` shows the full message
+
 ``fleetctl journal`` chops messages into 2048 chunks
+
 ``journalctl -u testbigdockerlogs.service`` chops messages into 2048 chunks
 
 See this:
