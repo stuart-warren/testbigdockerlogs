@@ -1,0 +1,10 @@
+[Unit]
+Description=TestBigDockerLogs
+After=docker.service
+Requires=docker.service
+
+[Service]
+Restart=always
+ExecStartPre=-/usr/bin/docker pull testbigdockerlogs
+ExecStart=/usr/bin/docker run testbigdockerlogs
+
